@@ -1,5 +1,6 @@
 
 import './App.css'
+import Education from './Education'
 import Header from './Header'
 import Summary from './Summary'
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <Summary />
+      <Education />
     </>
   )
 }
