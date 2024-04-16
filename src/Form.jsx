@@ -40,7 +40,11 @@ export default function Form({ formName, fields }) {
           </> :
           <>
             {data.map(element => {
-              return <p key={element.name}>{element.value}</p>
+              if (element.name === 'yearStart') {
+                return <p key={element.name}>From {element.value}</p>
+              } else if (element.name === 'yearEnd') {
+                return <p key={element.name}>To {element.value}</p>
+              } else return <p key={element.name}>{element.value}</p>
             })}
             <EditButton onClick={() => setIsEditing(true)} />
           </>
