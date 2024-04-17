@@ -1,8 +1,9 @@
 
-import './App.css'
-import Education from './Education'
-import Header from './Header'
-import Summary from './Summary'
+import './App.css';
+import Education from './Education';
+import Header from './Header';
+import Summary from './Summary';
+import Skills from './Skills';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Summary />
       <Education />
+      <Skills />
     </>
   )
 }
