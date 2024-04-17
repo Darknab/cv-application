@@ -33,7 +33,13 @@ export default function Form({ formName, fields }) {
         {isEditing ?
           <>
             {data.map(element => {
-              return <Input key={element.name} type={element.type} name={element.name} placeholder={element.value} />
+              return <Input
+                key={element.name} 
+                type={element.type} 
+                name={element.name} 
+                placeholder={element.value}
+                cols={element.cols}
+                rows={element.rows} />
             })}
             <BackButton onClick={() => setIsEditing(false)} />
             <button type="submit">Save</button>
