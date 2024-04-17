@@ -24,14 +24,18 @@ const educationFields = [
     value: '[end]',
   }
 ]
-
+let key = 0;
+function incrementKey() {
+  key += 1;
+  return key;
+}
 export default function Education() {
   const [ forms, setForms ] = useState([<Form key={0} formName="education" fields={educationFields}/>])
-
   function addForm() {
+
     setForms([
       ...forms,
-      <Form key={forms.length - 1} formName="education" fields={educationFields}/>
+      <Form key={incrementKey()} formName="education" fields={educationFields}/>
     ])
   }
 
