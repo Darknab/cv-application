@@ -12,6 +12,8 @@ export default function Summary() {
             name: 'summary',
             type: 'textarea',
             value: 'talk about you in a little paragraph of approximatively 100 words',
+            cols: '60',
+            rows: '10',
           }
         ]}
       />
