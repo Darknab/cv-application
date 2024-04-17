@@ -1,5 +1,5 @@
 import Form from './Form';
-import { AddButton } from './Buttons';
+import { AddButton, DeleteButton } from './Buttons';
 import { useState } from 'react';
 
 const educationFields = [
@@ -34,11 +34,19 @@ export default function Education() {
       <Form key={forms.length - 1} formName="education" fields={educationFields}/>
     ])
   }
+
   return (
     <div>
       <h2>Education</h2>
       {forms.map((form, index) => {
-        return <div key={index}> {form} </div>
+        return <div key={index}>
+          {form}
+          <DeleteButton onClick={() => {
+            setForms(
+              forms.filter(f => f.key !== form.key)
+            )
+          }} />
+          </div>
       })}
       <AddButton onClick={addForm} />
     </div>
