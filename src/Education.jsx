@@ -11,7 +11,7 @@ const educationFields = [
   {
     name: 'educationDescription',
     type: 'text',
-    value: '[Degree or description of the curriculum]',
+    value: '[Degree or certification]',
   },
   {
     name: 'yearStart',
