@@ -1,6 +1,4 @@
-import Form from './Form';
-import { AddButton, DeleteButton } from './Buttons';
-import { useState } from 'react';
+import Content from './Content';
 
 const educationFields = [
   {
@@ -24,35 +22,12 @@ const educationFields = [
     value: '[end]',
   }
 ]
-let key = 0;
-function incrementKey() {
-  key += 1;
-  return key;
-}
+
 export default function Education() {
-  const [ forms, setForms ] = useState([<Form key={0} formName="education" fields={educationFields}/>])
-  function addForm() {
-
-    setForms([
-      ...forms,
-      <Form key={incrementKey()} formName="education" fields={educationFields}/>
-    ])
-  }
-
   return (
     <div>
       <h2>Education</h2>
-      {forms.map((form, index) => {
-        return <div key={index}>
-          {form}
-          <DeleteButton onClick={() => {
-            setForms(
-              forms.filter(f => f.key !== form.key)
-            )
-          }} />
-          </div>
-      })}
-      <AddButton onClick={addForm} />
+      <Content fields={educationFields} formName="education" />
     </div>
   )
 }
