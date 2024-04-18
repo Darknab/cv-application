@@ -4,16 +4,17 @@ import Education from './Education';
 import Header from './Header';
 import Summary from './Summary';
 import Skills from './Skills';
+import Experience from './Experience';
 
-function App() {
+export default function App() {
   return (
     <>
       <Header />
       <Summary />
       <Education />
       <Skills />
+      <Experience />
     </>
   )
 }
 
-export default App
