@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function getYears(limit = 1950 ) {
   const date = new Date();
   const year = date.getFullYear();
@@ -23,6 +25,11 @@ function Select({ prefix, name }) {
   )
 }
 
+Select.propTypes = {
+  prefix: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+}
+
 export default function Input({ type, name, placeholder, cols, rows, classes }) {
   if (type === 'textarea') {
     return (
@@ -46,4 +53,13 @@ export default function Input({ type, name, placeholder, cols, rows, classes }) 
       </label>
     );
   };
+}
+
+Input.propTypes = {
+  type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  cols: PropTypes.string.isRequired,
+  rows: PropTypes.string.isRequired,
+  classes: PropTypes.string.isRequired,
 }

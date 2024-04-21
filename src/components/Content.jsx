@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Form from './Form';
 import { DeleteButton, AddButton } from './Buttons';
+import { PropTypes } from "prop-types";
 
 let key = 0;
 function incrementKey() {
@@ -36,4 +37,10 @@ export default function Content ({ fields, formName, list = null }) {
       })}
     </>
   )
+}
+
+Content.propTypes = {
+  fields: PropTypes.object.isRequired,
+  formName: PropTypes.string.isRequired,
+  list: PropTypes.component.isRequired
 }

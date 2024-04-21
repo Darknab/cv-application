@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Form from "./Form";
 import { AddButton, DeleteButton } from "./Buttons";
+import { PropTypes } from "prop-types";
 
   
 let key = 0;
@@ -38,4 +39,9 @@ export default function List({ formName, fields}) {
       </ul>
     </>
   )
+}
+
+List.propTypes = {
+  formName: PropTypes.string.isRequired,
+  fields: PropTypes.object.isRequired,
 }

@@ -1,6 +1,7 @@
 import { useState, Fragment } from "react";
 import Input from "./Input";
 import { BackButton, EditButton } from "./Buttons";
+import PropTypes from "prop-types";
 
 export default function Form({ formName, fields }) {
   const [ data, setData ] = useState(fields);
@@ -72,4 +73,9 @@ export default function Form({ formName, fields }) {
       </form>
     </div>
   );
+}
+
+Form.propTypes = {
+  formName: PropTypes.string.isRequired,
+  fields: PropTypes.object.isRequired
 }
