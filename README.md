@@ -1,8 +1,10 @@
-# React + Vite
+# CV Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is part of the [Odin project Curriculum](https://www.theodinproject.com/lessons/react-new-cv-application)
 
-Currently, two official plugins are available:
+CV-application is a resume builder where the user can add All needed informations they want, the can add as many cerifications, skills or expecience they want.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Todo
+
+Add an "Apply" button to show the resume without buttons, and why not...download as PDF!
+
