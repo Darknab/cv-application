@@ -1,7 +1,6 @@
 import { useState, Fragment } from "react";
 import Input from "./Input";
 import { BackButton, EditButton } from "./Buttons";
-import './App.css';
 
 export default function Form({ formName, fields }) {
   const [ data, setData ] = useState(fields);

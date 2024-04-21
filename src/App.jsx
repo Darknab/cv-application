@@ -1,10 +1,10 @@
 
 import './App.css';
-import Education from './Education';
-import Header from './Header';
-import Summary from './Summary';
-import Skills from './Skills';
-import Experience from './Experience';
+import Education from './components/Education';
+import Header from './components/Header';
+import Summary from './components/Summary';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
 
 export default function App() {
   return (
