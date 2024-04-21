@@ -23,11 +23,11 @@ function Select({ prefix, name }) {
   )
 }
 
-export default function Input({ type, name, placeholder, cols, rows }) {
+export default function Input({ type, name, placeholder, cols, rows, classes }) {
   if (type === 'textarea') {
     return (
       <label>
-        <textarea name={name} placeholder={placeholder} cols={cols} rows={rows}></textarea>
+        <textarea className={classes} name={name} placeholder={placeholder} cols={cols} rows={rows}></textarea>
       </label>
     );
   } else if (type === 'select') {
@@ -42,7 +42,7 @@ export default function Input({ type, name, placeholder, cols, rows }) {
   } else  {
     return (
       <label>
-        <input type={type} name={name} placeholder={placeholder} />
+        <input className={classes} type={type} name={name} placeholder={placeholder} />
       </label>
     );
   };

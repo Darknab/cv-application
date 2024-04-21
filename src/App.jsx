@@ -11,9 +11,15 @@ export default function App() {
     <>
       <Header />
       <Summary />
-      <Education />
-      <Skills />
-      <Experience />
+      <div className="grid-container">
+        <div className="grid-left">
+          <Education />
+          <Skills />
+        </div>
+        <div className="grid-right">
+          <Experience />
+        </div>
+      </div>
     </>
   )
 }

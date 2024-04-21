@@ -1,16 +1,16 @@
 export function BackButton({ onClick }) {
-  return <button type="button" onClick={onClick} >Back</button>
+  return <button type="button" onClick={onClick} ><i className="fa-solid fa-arrow-left-long"></i></button>
 }
 
 
 export function EditButton({ onClick }) {
-  return <button type="button" onClick={onClick} >Edit</button>
+  return <button type="button" onClick={onClick} ><i className="fa-solid fa-pencil"></i></button>
 }
 
 export function AddButton({ onClick }) {
-  return <button onClick={onClick}>Add</button>
+  return <button onClick={onClick}><i className="fa-solid fa-plus"></i></button>
 }
 
 export function DeleteButton({ onClick }) {
-  return <button onClick={onClick} >Delete</button>
+  return <button onClick={onClick}><i className="fa-solid fa-trash-can"></i></button>
 }

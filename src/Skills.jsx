@@ -13,8 +13,10 @@ const skillField = [
 export default function Skills() {
   return (
     <div>
-      <h2>Skills</h2>
-      <List formName="skill" fields={skillField} />
+      <div className="container">
+        <h2>Skills</h2>
+        <List formName="skill" fields={skillField} />
+      </div>
     </div>
   );
 }

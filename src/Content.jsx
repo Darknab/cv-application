@@ -20,18 +20,20 @@ export default function Content ({ fields, formName, list = null }) {
 
   return (
     <>
+      <AddButton onClick={addForm} />
       {forms.map((form, index) => {
         return <div key={index}>
           {form}
-          <DeleteButton onClick={() => {
+          <div className="btn-group">
+            <DeleteButton onClick={() => {
             setForms(
-              forms.filter(f => f.key !== form.key)
-            )
-          }} />
+                forms.filter(f => f.key !== form.key)
+              )
+            }} />
+          </div>
           {list}
         </div>
       })}
-      <AddButton onClick={addForm} />
     </>
   )
 }

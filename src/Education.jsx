@@ -26,8 +26,10 @@ const educationFields = [
 export default function Education() {
   return (
     <div>
-      <h2>Education</h2>
-      <Content fields={educationFields} formName="education" />
+      <div className="container">
+        <h2>Education</h2>
+        <Content fields={educationFields} formName="education" />
+      </div>
     </div>
   )
 }

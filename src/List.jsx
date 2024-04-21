@@ -21,19 +21,21 @@ export default function List({ formName, fields}) {
 
   return (
     <>
+      <AddButton onClick={addForm} />
       <ul>
         {forms.map((form, index) => {
           return (
             <li key={index} >
               {form}
-              <DeleteButton onClick={() => {
-                setForms(forms.filter(f => f.key !== form.key))
-              }} />
+              <div className="btn-group">
+                <DeleteButton onClick={() => {
+                  setForms(forms.filter(f => f.key !== form.key))
+                }} />
+              </div>
             </li>
           )
         })}
       </ul>
-      <AddButton onClick={addForm} />
     </>
   )
 }

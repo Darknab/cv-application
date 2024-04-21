@@ -37,12 +37,13 @@ const taskFields = [
 export default function Experience() {
   return (
     <div>
-      <h2>Proffessional Experience</h2>
-      <Content 
-        formName="experience" 
-        fields={experienceFields}
-        list={<List formName="task" fields={taskFields} />} />
-      
+      <div className='container'>
+        <h2>Professional Experience</h2>
+        <Content 
+          formName="experience" 
+          fields={experienceFields}
+          list={<List formName="task" fields={taskFields} />} />
+        </div>
     </div>
   )
 }
