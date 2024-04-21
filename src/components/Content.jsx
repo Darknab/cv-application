@@ -39,8 +39,8 @@ export default function Content ({ fields, formName, list = null }) {
   )
 }
 
-Content.propTypes = {
-  fields: PropTypes.object.isRequired,
+ Content.propTypes = {
+  fields: PropTypes.array.isRequired,
   formName: PropTypes.string.isRequired,
-  list: PropTypes.component.isRequired
+  list: PropTypes.object
 }

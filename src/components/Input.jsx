@@ -59,7 +59,7 @@ Input.propTypes = {
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
-  cols: PropTypes.string.isRequired,
-  rows: PropTypes.string.isRequired,
-  classes: PropTypes.string.isRequired,
+  cols: PropTypes.string,
+  rows: PropTypes.string,
+  classes: PropTypes.string,
 }

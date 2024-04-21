@@ -76,6 +76,6 @@ export default function Form({ formName, fields }) {
 }
 
 Form.propTypes = {
-  formName: PropTypes.string.isRequired,
-  fields: PropTypes.object.isRequired
+  formName: PropTypes.string,
+  fields: PropTypes.array.isRequired
 }

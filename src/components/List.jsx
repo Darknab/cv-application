@@ -43,5 +43,5 @@ export default function List({ formName, fields}) {
 
 List.propTypes = {
   formName: PropTypes.string.isRequired,
-  fields: PropTypes.object.isRequired,
+  fields: PropTypes.array.isRequired,
 }
